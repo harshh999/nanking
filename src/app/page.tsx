@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
           <h1 className="text-6xl md:text-8xl font-bold text-center mb-4 drop-shadow-2xl text-white tracking-wider">
-            Nan King
+            naN King
           </h1>
           <div className="text-center mb-6">
             <p className="text-2xl md:text-4xl drop-shadow-lg font-light tracking-wide text-white/95 bg-black/30 px-8 py-3 rounded-xl backdrop-blur-sm border border-white/20">
@@ -281,7 +281,7 @@ export default function Home() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/919537214191"
+        href="https://wa.me/917041118682"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-40 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-bounce hover:animate-none ring-4 ring-green-500/30"
