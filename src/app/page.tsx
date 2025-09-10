@@ -6,70 +6,69 @@ import { useState, useRef, useEffect } from 'react'
 export default function Home() {
   const menuData = {
     "Veg. Soup": [
-      { name: "Sweet Corn", price: "₹120" },
-      { name: "Hot & Sour", price: "₹100" },
-      { name: "Manchow", price: "₹100" },
-      { name: "Lung Fung", price: "₹100" },
-      { name: "Mushroom", price: "₹120" },
-      { name: "Clear", price: "₹100" },
-      { name: "Noodle Clear", price: "₹110" },
-      { name: "Tomato", price: "₹100" },
-      { name: "French Onion", price: "₹120" }
+      { name: "Sweet Corn", price: "₹120", description: "Creamy sweet corn kernels in a rich, comforting broth" },
+      { name: "Hot & Sour", price: "₹100", description: "Spicy and tangy soup with vegetables and tofu" },
+      { name: "Manchow", price: "₹100", description: "Indo-Chinese soup with crispy noodles and vegetables" },
+      { name: "Lung Fung", price: "₹100", description: "Traditional Chinese soup with mixed vegetables" },
+      { name: "Mushroom", price: "₹120", description: "Earthy mushroom soup with aromatic herbs" },
+      { name: "Clear", price: "₹100", description: "Light and refreshing clear vegetable broth" },
+      { name: "Noodle Clear", price: "₹110", description: "Clear soup with soft noodles and vegetables" },
+      { name: "Tomato", price: "₹100", description: "Fresh tomato soup with herbs and spices" },
+      { name: "French Onion", price: "₹120", description: "Rich caramelized onion soup with cheese topping" }
     ],
     "Starter's & Gravy's": [
-      { name: "Manchurian Dry", price: "₹160" },
-      { name: "Paneer Chilly", price: "₹220" },
-      { name: "Paneer 65", price: "₹230" },
-      { name: "Manchurian with Paneer 65", price: "₹210" },
-      { name: "Mushroom Chilly", price: "₹230" },
-      { name: "Comfau Manchurian", price: "₹170" },
-      { name: "Manchurian Gravy", price: "₹160" },
-      { name: "Schezwan Gravy", price: "₹170" },
-      { name: "In Garlic Sauce", price: "₹160" },
-      { name: "Paneer Chilly", price: "₹220" },
-      { name: "Chaw Chaw Gravy", price: "₹170" },
-      { name: "Sweet & Sour", price: "₹160" },
-      { name: "Nan King Special", price: "₹230", special: true },
-      { name: "Mushroom Gravy", price: "₹220" }
+      { name: "Manchurian Dry", price: "₹160", description: "Crispy vegetable balls in spicy Manchurian sauce" },
+      { name: "Paneer Chilly", price: "₹220", description: "Soft paneer cubes tossed with bell peppers and onions" },
+      { name: "Paneer 65", price: "₹230", description: "Spicy marinated paneer with curry leaves and chilies" },
+      { name: "Manchurian with Paneer 65", price: "₹210", description: "Combination of crispy Manchurian and spicy Paneer 65" },
+      { name: "Mushroom Chilly", price: "₹230", description: "Fresh mushrooms in spicy chili garlic sauce" },
+      { name: "Comfau Manchurian", price: "₹170", description: "Special style Manchurian with unique blend of spices" },
+      { name: "Manchurian Gravy", price: "₹160", description: "Vegetable balls in rich, flavorful gravy" },
+      { name: "Schezwan Gravy", price: "₹170", description: "Spicy Schezwan sauce with vegetables" },
+      { name: "In Garlic Sauce", price: "₹160", description: "Vegetables tossed in aromatic garlic sauce" },
+      { name: "Chaw Chaw Gravy", price: "₹170", description: "Traditional Chinese style vegetable gravy" },
+      { name: "Sweet & Sour", price: "₹160", description: "Perfect balance of sweet and tangy flavors" },
+      { name: "Nan King Special", price: "₹230", special: true, description: "Chef's signature dish with secret recipe" },
+      { name: "Mushroom Gravy", price: "₹220", description: "Rich mushroom gravy with herbs and spices" }
     ],
     "Veg. Rice": [
-      { name: "Lite Fried Rice", price: "₹150" },
-      { name: "Jeera Rice", price: "₹140" },
-      { name: "Garlic Rice", price: "₹150" },
-      { name: "Ginger Rice", price: "₹150" },
-      { name: "Singapuri Rice", price: "₹170" },
-      { name: "Hong Kong Rice", price: "₹170" },
-      { name: "Combination Rice", price: "₹160" },
-      { name: "Nan King Special Rice", price: "₹200", special: true },
-      { name: "Fried Rice", price: "₹150" },
-      { name: "Schezwan Rice", price: "₹160" },
-      { name: "Manchurian Rice", price: "₹160" },
-      { name: "Chinese Bhel", price: "₹160" },
-      { name: "Singapuri Bhel", price: "₹170" },
-      { name: "Rice with Gravy", price: "₹200" },
-      { name: "Triple Schezwan Rice", price: "₹200" },
-      { name: "Paneer Rice", price: "₹200" },
-      { name: "Mushroom Rice", price: "₹200" }
+      { name: "Lite Fried Rice", price: "₹150", description: "Light and fluffy fried rice with minimal oil" },
+      { name: "Jeera Rice", price: "₹140", description: "Fragrant basmati rice with cumin seeds" },
+      { name: "Garlic Rice", price: "₹150", description: "Aromatic rice with fresh garlic and herbs" },
+      { name: "Ginger Rice", price: "₹150", description: "Flavorful rice with fresh ginger and spices" },
+      { name: "Singapuri Rice", price: "₹170", description: "Singapore style rice with curry powder and vegetables" },
+      { name: "Hong Kong Rice", price: "₹170", description: "Hong Kong style fried rice with soy sauce" },
+      { name: "Combination Rice", price: "₹160", description: "Mixed vegetables and rice in perfect harmony" },
+      { name: "Nan King Special Rice", price: "₹200", special: true, description: "Our signature rice dish with special ingredients" },
+      { name: "Fried Rice", price: "₹150", description: "Classic Chinese fried rice with vegetables" },
+      { name: "Schezwan Rice", price: "₹160", description: "Spicy Schezwan flavored rice with vegetables" },
+      { name: "Manchurian Rice", price: "₹160", description: "Fried rice served with Manchurian balls" },
+      { name: "Chinese Bhel", price: "₹160", description: "Crispy noodles mixed with vegetables and sauces" },
+      { name: "Singapuri Bhel", price: "₹170", description: "Singapore style crispy noodle salad" },
+      { name: "Rice with Gravy", price: "₹200", description: "Steamed rice served with choice of gravy" },
+      { name: "Triple Schezwan Rice", price: "₹200", description: "Three different Schezwan preparations with rice" },
+      { name: "Paneer Rice", price: "₹200", description: "Fried rice with soft paneer cubes" },
+      { name: "Mushroom Rice", price: "₹200", description: "Aromatic rice with fresh mushrooms" }
     ],
     "Veg. Chowmien Noodles": [
-      { name: "Manchurian Noodle", price: "₹160" },
-      { name: "Chilly Garlic Noodle", price: "₹170" },
-      { name: "Hakka Noodle", price: "₹150" },
-      { name: "Schezwan Noodle", price: "₹160" },
-      { name: "Singapuri Noodle", price: "₹170" },
-      { name: "Hong Kong Noodle", price: "₹170" },
-      { name: "Mushroom Noodle", price: "₹200" },
-      { name: "Paneer Noodle", price: "₹200" },
-      { name: "Crispy Noodle", price: "₹200" },
-      { name: "Chow Min Gravy", price: "₹180" },
-      { name: "American Chopsee", price: "₹170" },
-      { name: "Chinese Chopsee", price: "₹170" },
-      { name: "Spring Roll", price: "₹200" }
+      { name: "Manchurian Noodle", price: "₹160", description: "Soft noodles with Manchurian sauce" },
+      { name: "Chilly Garlic Noodle", price: "₹170", description: "Spicy noodles with chili and garlic flavor" },
+      { name: "Hakka Noodle", price: "₹150", description: "Traditional Hakka style stir-fried noodles" },
+      { name: "Schezwan Noodle", price: "₹160", description: "Spicy Schezwan sauce with soft noodles" },
+      { name: "Singapuri Noodle", price: "₹170", description: "Singapore style curry flavored noodles" },
+      { name: "Hong Kong Noodle", price: "₹170", description: "Hong Kong style soy sauce noodles" },
+      { name: "Mushroom Noodle", price: "₹200", description: "Fresh mushrooms with stir-fried noodles" },
+      { name: "Paneer Noodle", price: "₹200", description: "Soft paneer cubes with flavorful noodles" },
+      { name: "Crispy Noodle", price: "₹200", description: "Crispy fried noodles with vegetables" },
+      { name: "Chow Min Gravy", price: "₹180", description: "Soft noodles in rich Chinese gravy" },
+      { name: "American Chopsee", price: "₹170", description: "American style mixed vegetable noodles" },
+      { name: "Chinese Chopsee", price: "₹170", description: "Traditional Chinese mixed vegetables with noodles" },
+      { name: "Spring Roll", price: "₹200", description: "Crispy rolls filled with fresh vegetables" }
     ],
     "Other Items": [
-      { name: "Salad", price: "₹20" },
-      { name: "Fried Noodles", price: "₹20" },
-      { name: "Manchurian", price: "₹50" }
+      { name: "Salad", price: "₹20", description: "Fresh mixed vegetable salad" },
+      { name: "Fried Noodles", price: "₹20", description: "Crispy fried noodles as side dish" },
+      { name: "Manchurian", price: "₹50", description: "Single serving of vegetable Manchurian" }
     ]
   }
 
@@ -193,27 +192,29 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="space-y-4">
               {items.map((item, index) => (
                 <div 
                   key={index}
-                  className="group relative bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 hover:border-red-200 overflow-hidden"
+                  className="group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-red-200 relative"
                 >
-                  {/* Background Pattern */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-50 to-transparent rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500"></div>
-                  
                   {item.special && (
-                    <div className="absolute top-3 right-3 bg-gradient-to-r from-amber-500 to-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow-lg z-10 animate-pulse">
+                    <div className="absolute top-3 right-3 bg-gradient-to-r from-amber-500 to-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow-lg z-10">
                       ⭐ Special
                     </div>
                   )}
 
-                  <div className="relative z-10">
-                    <h3 className="text-gray-900 font-semibold text-lg mb-4 group-hover:text-red-600 transition-colors line-clamp-2">
-                      {item.name}
-                    </h3>
-                    <div className="flex justify-between items-center">
-                      <span className="text-red-600 font-bold text-2xl">{item.price}</span>
+                  <div className="flex justify-between items-start">
+                    <div className="flex-1 pr-4">
+                      <h3 className="text-gray-900 font-semibold text-xl mb-2 group-hover:text-red-600 transition-colors">
+                        {item.name}
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <span className="text-gray-800 font-bold text-xl">{item.price}</span>
                     </div>
                   </div>
                 </div>
