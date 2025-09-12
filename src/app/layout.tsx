@@ -18,17 +18,9 @@ export const metadata: Metadata = {
   description: "Experience authentic Chinese cuisine at Nan King. Serving delicious vegetarian Chinese dishes, soups, rice, noodles, and specialties. Open 11:30 AM – 2:00 PM | 6:00 PM – 11:30 PM",
   keywords: ["Nan King", "Chinese Restaurant", "Authentic Chinese Food", "Vegetarian Chinese", "Chinese Noodles", "Chinese Rice", "Chinese Soup"],
   authors: [{ name: "Nan King Restaurant" }],
-  openGraph: {
-    title: "Nan King - Authentic Chinese Restaurant",
-    description: "Experience authentic Chinese cuisine with traditional flavors and modern presentation",
-    siteName: "Nan King Chinese Restaurant",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Nan King - Authentic Chinese Restaurant",
-    description: "Experience authentic Chinese cuisine with traditional flavors and modern presentation",
-  },
+ icons:{
+  icon: "./favicon.ico"
+ }
 };
 
 export default function RootLayout({
