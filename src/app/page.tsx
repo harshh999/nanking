@@ -18,14 +18,22 @@ export default function Home() {
     ],
     "Starter's & Gravy's": [
       { name: "Manchurian Dry", price: "₹160", description: "Crispy vegetable balls in spicy Manchurian sauce" },
+<<<<<<< HEAD
       { name: "Paneer Chilly", price: "₹220", description: "Soft paneer cubes tossed with bell peppers and onions" },
       { name: "Paneer 65", price: "₹230", description: "Spicy marinated paneer with curry leaves and chilies" },
       { name: "Manchurian with Paneer 65", price: "₹210", description: "Combination of crispy Manchurian and spicy Paneer 65" },
       { name: "Mushroom Chilly", price: "₹230", description: "Fresh mushrooms in spicy chili garlic sauce" },
+=======
+      { name: "Paneer Chilly", price: "₹230", description: "Soft paneer cubes tossed with bell peppers and onions" },
+      { name: "Paneer 65", price: "₹240", description: "Spicy marinated paneer with curry leaves and chilies" },
+      { name: "Manchurian with Paneer 65", price: "₹220", description: "Combination of crispy Manchurian and spicy Paneer 65" },
+      { name: "Mushroom Chilly", price: "₹240", description: "Fresh mushrooms in spicy chili garlic sauce" },
+>>>>>>> 68ea244 (Update menu descriptions and shorten paneer chilly gravy description)
       { name: "Comfau Manchurian", price: "₹170", description: "Special style Manchurian with unique blend of spices" },
       { name: "Manchurian Gravy", price: "₹160", description: "Vegetable balls in rich, flavorful gravy" },
       { name: "Schezwan Gravy", price: "₹170", description: "Spicy Schezwan sauce with vegetables" },
       { name: "In Garlic Sauce", price: "₹160", description: "Vegetables tossed in aromatic garlic sauce" },
+<<<<<<< HEAD
       { name: "Chaw Chaw Gravy", price: "₹170", description: "Traditional Chinese style vegetable gravy" },
       { name: "Sweet & Sour", price: "₹160", description: "Perfect balance of sweet and tangy flavors" },
       { name: "Nan King Special", price: "₹230", special: true, description: "Chef's signature dish with secret recipe" },
@@ -59,6 +67,42 @@ export default function Home() {
       { name: "Hong Kong Noodle", price: "₹170", description: "Hong Kong style soy sauce noodles" },
       { name: "Mushroom Noodle", price: "₹200", description: "Fresh mushrooms with stir-fried noodles" },
       { name: "Paneer Noodle", price: "₹200", description: "Soft paneer cubes with flavorful noodles" },
+=======
+      { name: "Paneer Chilly Gravy", price: "₹230", description: "Soft paneer cubes in spicy chili garlic gravy" },
+      { name: "Chaw Chaw Gravy", price: "₹170", description: "Traditional Chinese style vegetable gravy" },
+      { name: "Sweet & Sour", price: "₹170", description: "Perfect balance of sweet and tangy flavors" },
+      { name: "Nan King Special", price: "₹230", special: true, description: "Chef's signature dish with secret recipe" },
+      { name: "Mushroom Gravy", price: "₹230", description: "Rich mushroom gravy with herbs and spices" }
+    ],
+    "Veg. Rice": [
+      { name: "Lite Fried Rice", price: "₹160", description: "Light and fluffy fried rice with minimal oil" },
+      { name: "Jeera Rice", price: "₹160", description: "Fragrant basmati rice with cumin seeds" },
+      { name: "Garlic Rice", price: "₹170", description: "Aromatic rice with fresh garlic and herbs" },
+      { name: "Ginger Rice", price: "₹160", description: "Flavorful rice with fresh ginger and spices" },
+      { name: "Singapuri Rice", price: "₹170", description: "Singapore style rice with curry powder and vegetables" },
+      { name: "Hong Kong Rice", price: "₹170", description: "Hong Kong style fried rice with soy sauce" },
+      { name: "Combination Rice", price: "₹170", description: "Mixed vegetables and rice in perfect harmony" },
+      { name: "Nan King Special Rice", price: "₹210", special: true, description: "Our signature rice dish with special ingredients" },
+      { name: "Fried Rice", price: "₹160", description: "Classic Chinese fried rice with vegetables" },
+      { name: "Schezwan Rice", price: "₹160", description: "Spicy Schezwan flavored rice with vegetables" },
+      { name: "Manchurian Rice", price: "₹170", description: "Fried rice served with Manchurian balls" },
+      { name: "Chinese Bhel", price: "₹170", description: "Crispy noodles mixed with vegetables and sauces" },
+      { name: "Singapuri Bhel", price: "₹170", description: "Singapore style crispy noodle salad" },
+      { name: "Rice with Gravy", price: "₹210", description: "Steamed rice served with choice of gravy" },
+      { name: "Triple Schezwan Rice", price: "₹210", description: "Three different Schezwan preparations with rice" },
+      { name: "Paneer Rice", price: "₹210", description: "Fried rice with soft paneer cubes" },
+      { name: "Mushroom Rice", price: "₹210", description: "Aromatic rice with fresh mushrooms" }
+    ],
+    "Veg. Chowmien Noodles": [
+      { name: "Manchurian Noodle", price: "₹170", description: "Soft noodles with Manchurian sauce" },
+      { name: "Chilly Garlic Noodle", price: "₹170", description: "Spicy noodles with chili and garlic flavor" },
+      { name: "Hakka Noodle", price: "₹160", description: "Traditional Hakka style stir-fried noodles" },
+      { name: "Schezwan Noodle", price: "₹160", description: "Spicy Schezwan sauce with soft noodles" },
+      { name: "Singapuri Noodle", price: "₹170", description: "Singapore style curry flavored noodles" },
+      { name: "Hong Kong Noodle", price: "₹170", description: "Hong Kong style soy sauce noodles" },
+      { name: "Mushroom Noodle", price: "₹210", description: "Fresh mushrooms with stir-fried noodles" },
+      { name: "Paneer Noodle", price: "₹210", description: "Soft paneer cubes with flavorful noodles" },
+>>>>>>> 68ea244 (Update menu descriptions and shorten paneer chilly gravy description)
       { name: "Crispy Noodle", price: "₹200", description: "Crispy fried noodles with vegetables" },
       { name: "Chow Min Gravy", price: "₹180", description: "Soft noodles in rich Chinese gravy" },
       { name: "American Chopsee", price: "₹170", description: "American style mixed vegetable noodles" },
